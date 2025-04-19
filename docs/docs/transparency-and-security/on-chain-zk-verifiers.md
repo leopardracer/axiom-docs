@@ -33,7 +33,7 @@ To verify the generation of the `AxiomV2QueryVerifier.sol` code, you can follow 
 #### Supported `aggregateVkeyHash`es
 
 The `AxiomV2QueryVerifier` contract is the SNARK verifier of a [universal aggregation](/protocol/protocol-design/zk-circuits-for-axiom-queries.md#universal-aggregation) circuit.
-As explained in [Aggregate Vkey Hashes](/protocol/protocol-design/zk-circuits-for-axiom-queries.md#aggregate-vkey-hashes), a ZK proof for a universal aggregation circuit must output an `aggregateVkeyHash` commiting to the full computation it is proving, and the `AxiomV2Query` contract must check that the output `aggregateVkeyHash` is in a verified list.
+As explained in [Aggregate Vkey Hashes](/protocol/protocol-design/zk-circuits-for-axiom-queries.md#aggregate-vkey-hashes), a ZK proof for a universal aggregation circuit must output an `aggregateVkeyHash` committing to the full computation it is proving, and the `AxiomV2Query` contract must check that the output `aggregateVkeyHash` is in a verified list.
 
 For the Axiom V2 mainnet launch, `AxiomV2Query` has been initialized with the following `aggregateVkeyHash`es:
 | `aggregateVkeyHash` | Intent Name |
